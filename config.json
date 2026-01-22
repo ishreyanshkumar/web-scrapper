@@ -1,0 +1,25 @@
+{
+  "scraper": {
+    "base_url": "https://www.flipkart.com/search",
+    "delay": 2,
+    "max_retries": 3,
+    "timeout": 10
+  },
+  "selectors": {
+    "product_container": "div.tUxRFH",
+    "product_name": "div.KzDlHZ",
+    "product_price": "div.Nx9bqj._4b5DiR",
+    "product_rating": "div.XQDdHH",
+    "product_link": "a.CGtC98"
+  },
+  "output": {
+    "default_format": "csv",
+    "csv_delimiter": ",",
+    "json_indent": 2
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "scraper.log",
+    "format": "%(asctime)s - %(levelname)s - %(message)s"
+  }
+}
